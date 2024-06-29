@@ -70,8 +70,13 @@ def predict_disease(model, image_path):
 if __name__ == "__main__":
     model_path = 'knn_model.pkl'
     image_paths = [
-        'pruebas/Potato_LB3.jpg',
-        #'image2.jpg'
+        'pruebas/Potato_LB1.JPG',
+        'pruebas/Potato_LB2.JPG',
+        'pruebas/Potato_LB3.JPG',
+        'pruebas/Apple_B_R.JPG',
+        'pruebas/orange1.JPG',
+        'pruebas/orange2.JPG',
+        'pruebas/clock.jpg'
     ]
 
     model = load_model(model_path)

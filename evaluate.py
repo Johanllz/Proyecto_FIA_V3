@@ -11,8 +11,7 @@ def evaluate_knn_model(data_dir, model_path, img_size=(128, 128), samples_per_cl
 
     y_pred = knn.predict(X_test)
 
-    print("Confusion Matrix:")
-    print(confusion_matrix(y_test, y_pred))
+   
 
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=label_encoder.classes_))
